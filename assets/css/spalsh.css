@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+.blur{
+    background-image: url(../img/bubble1.jpg);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.welcome{
+    position: absolute;
+   top: 50%;
+   left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    z-index: 2;
+    background-color: rgba(rgb(160, 140, 140), rgb(146, 163, 146), rgb(129, 129, 145), alpha);
+}
