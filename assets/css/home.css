@@ -47,9 +47,7 @@ h3 a{
     animation: 
         typing .5s steps(40, end);
 }
-@keyframes{
-    typing
-}
+
 .intro .link{
     display: flex;
     justify-content: center;
