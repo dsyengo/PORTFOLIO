@@ -2,107 +2,92 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    color: #fff;
+  
+   
 }
 body, html{
     height: 100%;
+    background-color: black;
 }
-/* START OF NAV PAGE */
-.left{
-   position: absolute;
-   width: 30%;
-   height: 100%;
+h3{
+    margin: 10px 10px 10px 20px;
+    
 }
-.left ul{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.left li{
-    padding: 6px;
-    list-style: none;
-     display: flex;
-   
-}
-
-.left li a{
+h3 a{
+    color: red;
     text-decoration: none;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 800;
-    letter-spacing: 2px;
-    color: white;
-    
-    
-    
+    font-size:xx-large;
 }
-
-.bg{
-    filter: blur(3px);
-    -webkit-filter: blur(3px);
+.container{
+    background-image:url(../img/me-night.jpg);
     height: 100%;
-    background-image: url(../img/bigger.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     
 }
 
-.left li a:hover{
-   
-   letter-spacing: 2px; 
-    border-bottom-right-radius: 0.2cm ;
-    
-    color: orchid;
-}
-
-
-   /*END  OF NAV PAGE  */
-
-
-/* START OF INFO PAGES */
- .info{
+.intro{
     position: absolute;
-    width: 70%;
-    margin-left: 30%;
-    background-color: rgb(64, 78, 100);
-    height: 100%;
-    
- }
-
-
-/* END OF NAV PAGE */
-
-/* START OF RIGHT FLOAT */
-.home{
-    position: absolute;
-    top: 40%;
-    left: 3%;
+    top: 45%;
+    left: 0;
+    margin-left: 20px;
+    padding: 5px;
 }
-.home h3{
-    font-family:cursive;
+.intro p{
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+.intro p span{
+    color: red;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    animation: 
+        typing .5s steps(40, end);
+}
+@keyframes{
+    typing
+}
+.intro .link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro .link a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: red;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.intro .link a:hover{
+    background-color: hotpink;
+}
+nav{
+    float: right; 
+    margin-right:30px;
+}
+nav ul{
+    display: flex;
+    padding: 10px;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    padding: 10px;
+}
+nav ul li a:hover {
+    background-color: hsl(7, 80%, 48%);
     color: white;
-    font-size: larger;
-}
-.home h3{
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: .15em solid orange;
-    margin: auto 0;
-    letter-spacing: .15em;
-    animation: typing 3s steps(5c0, end),
-             blink-caret .75s step-end infinite;
-}
-@keyframes typing{
-    from{width: 0}
-    to{width: 100%}
-}
-
-@keyframes blink-caret{
-    from, to {border-color: transparent}
-    50% {border-color: orange}
-}
-
-/* END OF FLOAT */
+  }
